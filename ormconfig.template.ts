@@ -1,0 +1,21 @@
+export default[{
+  "name": "liquidity",
+  "type": "postgres",
+  "host": "127.0.0.1",
+  "port": 5432,
+  "username": "user",
+  "password": "password",
+  "database": "database_liquidity",
+  "entities": ["src/entities/*.ts"],
+  "synchronize": true
+}, {
+  "name": "delegations",
+  "type": "postgres",
+  "host": "127.0.0.1",
+  "port": 5432,
+  "username": "user",
+  "password": "password",
+  "database": "database_delegations",
+  "entities": ["src/entities/*.ts"],
+  "synchronize": true
+}] 

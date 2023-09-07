@@ -1,0 +1,26 @@
+{
+  "name": "airdrop-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/main.ts",
+    "snapshot_lp": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/snapshot_lp.ts",
+    "snapshot_val": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/snapshot_val.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typeorm": "typeorm-ts-node-esm"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@terra-money/feather.js": "^1.0.11",
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.6",
+    "typeorm": "^0.3.17",
+    "typescript": "^5.2.2"
+  }
+}

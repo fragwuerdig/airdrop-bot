@@ -1,0 +1,6 @@
+ormconfig.ts
+dist
+node_modules
+package-lock.json
+settings.ts
+*.log
