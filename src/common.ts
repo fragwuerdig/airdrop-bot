@@ -17,6 +17,11 @@ type DelegationsResponse = {
 	amount: number,
 }
 
+type Cw20Transfer = {
+	recipient: string,
+	amount: number,
+}
+
 export async function getDelegators(
     lcd: LCDClient,
 	valoper: string,
@@ -215,9 +220,9 @@ export function airdropCW20Msgs(
 			token, // contract (the cw20 to be airdropped)
 			{
 				"transfer":{
-					"from": wallet,	// (the airdrop wallet)
-					"to": address,	//
-					"amount": Math.floor(amnt)
+					//"from": wallet,	// (the airdrop wallet)
+					"recipient": address,	//
+					"amount": Math.floor(amnt).toString()
 				}
 			}
 		);
